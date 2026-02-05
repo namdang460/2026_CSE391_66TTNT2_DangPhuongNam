@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html_Form</title>
+    <style>
+        table{
+            table-layout: fixed;
+            width: 300px;
+        }
+        .button{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="first-header">
+            <h2>Basic Info</h2>
+            <hr>
+        </div>
+        <table>
+            <tr>
+                <th>Employee ID</th>
+                <td>9</td>
+            </tr>
+            <tr>
+                <th>Last Name</th>
+                <td>Dodsworth</td>
+            </tr>
+            <tr>
+                <th>First Name</th>
+                <td>
+                    <input type="text" id="fname" name="first name" value="Anne" >
+                </td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>
+                    <input type="radio" id="Gender">Male <br>
+                    <input type="radio" id="Gender">Female <br>
+                    <input type="radio" id="Gender">XXX <br>
+                    <input type="radio" id="Gender" checked>ZZZ <br>
+                </td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <td>
+                    <input type="text" id="Title" value="Sales Representative">
+                </td>
+            </tr>
+            <tr>
+                <th>Suffix</th>
+                <td>
+                    <input type="text" id="Suffix" value="Ms.">
+                </td>
+            </tr>
+            <tr>
+                <th>BirthDate</th>
+                <td>
+                    <input type="date" id="BirthDate" value="1969-07-02">(?)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    HireDate
+                </th>
+                <td>
+                    <input type="date" id="HireDate" value="1994-11-15">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    SSN # (if applicable)
+                </th>
+                <td><input type="text" id="SSN"></td>
+            </tr>
+            <tr>
+                <th>Reports To</th>
+                <td>
+                    <select>
+                        <option >Buchanan</option>
+                        <option >Mianne</option>
+                        <option >Michotso</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <form>
+        <div class="Second-header">
+            <h2>
+                Contact Info
+            </h2>
+        </div>
+        <hr/>
+        <table>
+            <tr>
+                <th>
+                    Email
+                </th>
+                <td><input type="text" placeholder="name@example.com"></td>
+            </tr>
+            <tr>
+                <th>
+                    Address
+                </th>
+                <td>
+                    <input type="text" value="7 Houndstooth Rd.">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    City
+                </th>
+                <td>
+                    <input type="text" value="London">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Region
+                </th>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Postal Code
+                </th>
+                <td>
+                    <input type="text" value="WG2 7LT">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Country
+                </th>
+                <td>
+                    <select>
+                        <option>Russion Federation</option>
+                        <option>ThanhHoa</option>
+                        <option>VietNam</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    US Home Phone
+                </th>
+                <td>
+                    <input type="text" value="(234)234-2342">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Photo
+                </th>
+                <td>
+                    <input type="file" name="file" id="file" value="EmpiD9.png">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <form>
+        <div class="third-header">
+            <h2>
+                Optional Info
+            </h2>
+        </div>
+        <hr>
+        <table>
+            <tr>
+                <th>
+                    Notes
+                </th>
+                <td>
+                    <textarea rows="6" cols="57">Anne has a BA degree in English from St. Lawrence College. She is fluent in French and German.ZZZ</textarea>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Preferred Shift
+                </th>
+                <td>
+                    <input type="checkbox" name="PreShift1" id="PreShift2"> Regular <br>
+                    <input type="checkbox" name="PreShift2" id="PreShift2" checked> Gravy Yard
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Active
+                </th>
+                <td>
+                    <input type="checkbox" name="Active" id="Active" checked>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Are you human?
+                </th>
+                <td>
+                    <img src="picture.jpg" alt="picture"><br>
+                    <button>Click to change</button>
+                    <input type="text"></input>
+                </td>
+            <tr>
+        </table>
+    </form>
+    <form>
+        <hr/>
+        <div class="button">
+            <div>
+                <button>&lt;</button>
+                <button>&gt;</button>
+            </div>
+            <div class="right">
+                <button>Submit</button>
+                <button>Cancel</button>
+            </div>
+        
+    </form>
+</body>
+</html>
