@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+}
+
+#page-logo a {
+  font-family: "Oleo Script", cursive;
+  font-size: 30px;
+  color: #f5d742;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+   border: 4px solid #efe3aa;
+   padding: 6px 14px;
+}
+nav a {
+  color: #f5d742;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+nav a:hover {
+  color: #f5d742;
+}
+
+
+#hero {
+  height: 90vh;
+  background-image: url("images/ocean.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px 60px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+}
+
+#hero-content h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+#hero-content p {
+  margin-bottom: 20px;
+}
+
+#hero-content a {
+  background-color: #f5d742;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#hero-content a:hover {
+  background-color: #ffd900;
+}
+
+
+#highlights {
+  padding: 50px 80px;
+  background-color: #d9f0f5;
+  text-align: center;
+}
+
+#highlights h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+#destinations {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.destination {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.destination img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.destination p {
+  padding: 15px;
+  font-weight: 500;
+}
+
+footer {
+  background-color: #222;
+  padding: 20px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+}
+
+footer img {
+  width: 30px;
+}
