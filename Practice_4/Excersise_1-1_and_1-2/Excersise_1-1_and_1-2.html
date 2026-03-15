@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang quản lý điểm sinh viên</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h3>Quản lý điểm sinh viên </h3>
+        <div>
+            <label >Họ Tên </label>
+            <input type="text" id="input-name" placeholder="Nhập họ tên sinh viên"><br>
+            <label >Điểm </label>
+            <input type="text" id="input-score" placeholder="Nhập điểm từ 0-10"> <br>
+            <button id="addBtn">Thêm</button>
+        </div>
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Tìm sinh viên...">
+            <select id="filterRank">
+                <option value="all">Tất cả</option>
+                <option value="Giỏi">Giỏi</option>
+                <option value="Khá">Khá</option>
+                <option value="Trung bình">Trung bình</option>
+                <option value="Yếu">Yếu</option>
+            </select>
+        </div>
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Họ Tên</th>
+                <th id="scoreHeader">Điểm</th>
+                <th>Xếp loại</th>
+                <th>Thao tác</th>
+            </tr>
+        </table>
+    </header>
+    <script src="JS_BangDiemSV.js"></script>
+</body>
+
+</html>
